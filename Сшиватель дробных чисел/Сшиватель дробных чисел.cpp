@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 #include <string>
-#include <iomanip> // For controlling number output
+#include <iomanip>
 
 // Функция для объединения целой и дробной частей в одно число
 double combineParts(const std::string& wholePart, const std::string& fractionalPart) {
@@ -36,7 +36,7 @@ int main() {
 
     double result = combineParts(wholePart, fractionalPart);
 
-    std::cout << std::fixed << std::setprecision(10);
+    std::cout << std::fixed << std::setprecision(4);
     std::cout << "The resulting number: " << result << "\n";
 
     return 0;
